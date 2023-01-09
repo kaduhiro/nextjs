@@ -16,10 +16,10 @@ services:
     image: nextjs:1
     container_name: nextjs
     hostname: nextjs
-    # ports:
-    #   - 12345:12345
-    # volumes:
-    #   - .:/src
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/src
     # environment:
     #   TERM: $TERM
     # restart: always
