@@ -1,10 +1,9 @@
-ARG VERSION=22.04
+ARG VERSION=19
 
-FROM ubuntu:${VERSION}
+FROM node:${VERSION}
 LABEL maintainer="kaduhiro <github@kaduhiro.com>"
 
-RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y  --no-install-recommends tzdata
+USER node
+WORKDIR /src
 
-RUN apt-get clean -y \
-    && rm -rf /var/lib/apt/lists/*
+EXPOSE 3000
