@@ -1,0 +1,33 @@
+version: '3.8'
+
+x-var: &COMMON
+  networks:
+    internal:
+
+networks:
+  internal:
+    # name: internal
+    # external: true
+
+services:
+  nextjs:
+    <<: *COMMON
+    build: .
+    image: nextjs:1
+    container_name: nextjs
+    hostname: nextjs
+    # ports:
+    #   - 12345:12345
+    # volumes:
+    #   - .:/src
+    # environment:
+    #   TERM: $TERM
+    # restart: always
+    # tty: true
+    # entrypoint:
+    #   - /sbin/tini
+    #   - --
+    # command:
+    #   - tail
+    #   - -f
+    #   - /dev/null
