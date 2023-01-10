@@ -12,7 +12,7 @@ networks:
 services:
   nextjs:
     <<: *COMMON
-    build: .
+    build: ../../build
     image: nextjs:1
     container_name: nextjs
     hostname: nextjs
