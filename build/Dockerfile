@@ -4,6 +4,6 @@ FROM node:${VERSION}
 LABEL maintainer="kaduhiro <github@kaduhiro.com>"
 
 USER node
-WORKDIR /src
+WORKDIR /app
 
 EXPOSE 3000
