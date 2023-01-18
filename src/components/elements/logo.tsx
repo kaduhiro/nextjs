@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Props } from "@/types";
+
 import styles from "@/assets/css/DefaultLayout.module.css";
 
 export const Logo = () => {

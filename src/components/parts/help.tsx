@@ -1,6 +1,5 @@
-import { Props } from "@/types";
-import { Card } from "@/components/elements";
 import styles from "@/assets/css/DefaultLayout.module.css";
+import { Card } from "@/components/elements";
 
 export const Help = () => {
   return (

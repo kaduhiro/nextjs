@@ -1,8 +1,9 @@
-import Image from "next/image";
 import { Inter } from "@next/font/google";
-import { DefaultLayout } from "@/components/layouts";
+import Image from "next/image";
+
 import styles from "@/assets/css/DefaultLayout.module.css";
 import { Logo } from "@/components/elements";
+import { DefaultLayout } from "@/components/layouts";
 import { Help } from "@/components/parts";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,14 +22,14 @@ export default function Home() {
 
         <div className={styles.center}>
           <Image
-            className={'animate-slide-in-elliptic-top-fwd ' + styles.logo}
+            className={"animate-slide-in-elliptic-top-fwd " + styles.logo}
             src="/next.svg"
             alt="Next.js Logo"
             width={180}
             height={37}
             priority
           />
-          <div className={'animate-bounce ' + styles.thirteen}>
+          <div className={"animate-bounce " + styles.thirteen}>
             <Image
               src="/thirteen.svg"
               alt="13"

@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import { LayoutProps } from "@/types";
 
 export const DefaultLayout = ({ children, title }: LayoutProps) => {
