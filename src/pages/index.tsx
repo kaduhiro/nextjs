@@ -21,7 +21,7 @@ export default function Home() {
 
         <div className={styles.center}>
           <Image
-            className={styles.logo}
+            className={'animate-slide-in-elliptic-top-fwd ' + styles.logo}
             src="/next.svg"
             alt="Next.js Logo"
             width={180}
