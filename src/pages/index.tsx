@@ -28,7 +28,7 @@ export default function Home() {
             height={37}
             priority
           />
-          <div className={styles.thirteen}>
+          <div className={'animate-bounce ' + styles.thirteen}>
             <Image
               src="/thirteen.svg"
               alt="13"
