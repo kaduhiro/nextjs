@@ -1,7 +1,6 @@
 import { Inter } from "@next/font/google";
 import Image from "next/image";
 
-import styles from "@/assets/css/DefaultLayout.module.css";
 import { Logo } from "@/components/elements";
 import { DefaultLayout } from "@/components/layouts";
 import { Help } from "@/components/parts";
@@ -11,7 +10,6 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <DefaultLayout title="Create Next App">
-      <main className={styles.main}>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
@@ -41,7 +39,6 @@ export default function Home() {
         </div>
 
         <Help />
-      </main>
     </DefaultLayout>
   );
 }

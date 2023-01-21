@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import styles from "@/assets/css/DefaultLayout.module.css";
 import { LayoutProps } from "@/types";
 
 export const DefaultLayout = ({ children, title }: LayoutProps) => {
@@ -12,7 +13,7 @@ export const DefaultLayout = ({ children, title }: LayoutProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
     </>
   );
 };
