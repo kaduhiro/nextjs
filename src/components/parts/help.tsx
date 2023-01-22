@@ -1,4 +1,4 @@
-import styles from "@/assets/css/DefaultLayout.module.css";
+import styles from "@/assets/css/components/Help.module.css";
 import { Card } from "@/components/elements";
 
 export const Help = () => {

@@ -1,6 +1,7 @@
 import { Inter } from "@next/font/google";
 import Image from "next/image";
 
+import styles from "@/assets/css/Index.module.css";
 import { Logo } from "@/components/elements";
 import { DefaultLayout } from "@/components/layouts";
 import { Help } from "@/components/parts";

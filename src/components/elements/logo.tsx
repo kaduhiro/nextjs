@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "@/assets/css/DefaultLayout.module.css";
+import styles from "@/assets/css/components/Logo.module.css";
 
 export const Logo = () => {
   return (

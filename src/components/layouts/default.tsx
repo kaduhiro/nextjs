@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import styles from "@/assets/css/DefaultLayout.module.css";
+import styles from "@/assets/css/layouts/DefaultLayout.module.css";
 import { LayoutProps } from "@/types";
 
 export const DefaultLayout = ({ children, title }: LayoutProps) => {

@@ -1,7 +1,6 @@
 import { Inter } from "@next/font/google";
 
-import styles from "@/assets/css/DefaultLayout.module.css";
-
+import styles from "@/assets/css/components/Card.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
