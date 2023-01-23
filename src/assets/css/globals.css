@@ -109,3 +109,7 @@ a {
     color-scheme: dark;
   }
 }
+
+#__next {
+  min-height: 100vh;
+}
