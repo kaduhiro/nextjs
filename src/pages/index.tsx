@@ -1,16 +1,24 @@
-import { Inter } from "@next/font/google";
+import { useEffect } from "react";
+
 import Image from "next/image";
+import { useRecoilState } from "recoil";
 
 import styles from "@/assets/css/Index.module.css";
 import { Logo } from "@/components/elements";
 import { DefaultLayout } from "@/components/layouts";
 import { Help } from "@/components/parts";
-
-const inter = Inter({ subsets: ["latin"] });
+import { counterState } from "@/states";
 
 export default function Home() {
+  const [counter, setCounter] = useRecoilState(counterState);
+
+  useEffect(() => {
+    setCounter({ count: counter.count + 1 });
+  }, []);
+
   return (
-    <DefaultLayout title="Create Next App">
+    <DefaultLayout title={`Create Next App (${counter.count})`}>
+      <main className={styles.main}>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
