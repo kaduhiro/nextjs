@@ -18,7 +18,6 @@ export default function Home() {
 
   return (
     <DefaultLayout title={`Create Next App (${counter.count})`}>
-      <main className={styles.main}>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
