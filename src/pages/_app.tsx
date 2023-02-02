@@ -1,11 +1,11 @@
-import { Roboto_Slab } from "@next/font/google";
+import { Roboto_Slab } from '@next/font/google';
+import { RecoilRoot } from 'recoil';
 
-import "@/assets/css/globals.css";
-import { RecoilRoot } from "recoil";
+import '@/assets/css/globals.css';
 
-import type { AppProps } from "next/app";
+import type { AppProps } from 'next/app';
 
-const roboto = Roboto_Slab({ subsets: ["latin"] });
+const roboto = Roboto_Slab({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
