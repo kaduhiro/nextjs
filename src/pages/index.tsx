@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRecoilState } from 'recoil';
 
 import styles from '@/assets/css/Index.module.css';
-import { Logo } from '@/components/elements';
+import { Logo, Theme } from '@/components/elements';
 import { DefaultLayout } from '@/components/layouts';
 import { Help } from '@/components/parts';
 import { counterState } from '@/states';
@@ -24,6 +24,7 @@ export default function Home() {
           <code className={styles.code}>pages/index.tsx</code>
         </p>
         <Logo />
+        <Theme />
       </div>
 
       <div className={styles.center}>
