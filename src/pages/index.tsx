@@ -24,7 +24,6 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>pages/index.tsx</code>
         </p>
-        <Logo />
         <Theme />
       </div>
 
@@ -39,6 +38,7 @@ export default function Home() {
         />
         <div className={'animate-bounce ' + styles.thirteen}>
           <Image src='/thirteen.svg' alt='13' width={40} height={31} priority />
+          <Logo />
         </div>
       </div>
 
