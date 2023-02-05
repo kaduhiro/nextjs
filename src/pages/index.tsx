@@ -3,11 +3,12 @@ import { useEffect } from 'react';
 import Image from 'next/image';
 import { useRecoilState } from 'recoil';
 
-import styles from '@/assets/css/Index.module.css';
 import { Logo, Theme } from '@/components/elements';
 import { DefaultLayout } from '@/components/layouts';
 import { Help } from '@/components/parts';
 import { counterState } from '@/states';
+
+import styles from '@/assets/css/Index.module.css';
 
 export default function Home() {
   const [counter, setCounter] = useRecoilState(counterState);
