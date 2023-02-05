@@ -1,10 +1,20 @@
-import Head from 'next/head';
+import { useEffect } from 'react';
 
+import Head from 'next/head';
+import { useRecoilValue } from 'recoil';
+
+import { themeState } from '@/states';
 import { LayoutProps } from '@/types';
 
 import styles from '@/assets/css/layouts/DefaultLayout.module.css';
 
 export const DefaultLayout = ({ children, title }: LayoutProps) => {
+  const theme = useRecoilValue(themeState);
+
+  useEffect(() => {
+    document.body.className = !theme.dark ? 'light' : 'dark';
+  });
+
   return (
     <>
       <Head>
