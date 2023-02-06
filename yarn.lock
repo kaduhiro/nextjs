@@ -873,6 +873,13 @@ eslint-plugin-react@^7.31.7:
     semver "^6.3.0"
     string.prototype.matchall "^4.0.8"
 
+eslint-plugin-sort-export-all@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-sort-export-all/-/eslint-plugin-sort-export-all-1.2.2.tgz#821ca5ec27e5be27426e93ce6d54c35a4f289f20"
+  integrity sha512-yvOjEiGkhf2A+5lmZzZZPI79sZFF4OkLU2Bth6cfBQvZG+FBcz9naGEc8xADfixZ6JYI5yOF5P6qmysSGsAPyA==
+  dependencies:
+    natural-compare "^1.4.0"
+
 eslint-plugin-tailwindcss@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-3.8.0.tgz#e768055d285b79cb39d6adc781592bc5f3f57f42"

@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['import', 'unused-imports', 'tailwindcss'],
+  plugins: ['import', 'unused-imports', 'sort-export-all', 'tailwindcss'],
   extends: ['next', 'next/core-web-vitals', 'plugin:tailwindcss/recommended', 'prettier'],
   rules: {
     'no-restricted-imports': ['error'],
@@ -43,5 +43,6 @@ module.exports = {
       },
     ],
     'unused-imports/no-unused-imports': 'error',
+    'sort-export-all/sort-export-all': 'warn',
   },
 };
