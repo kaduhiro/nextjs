@@ -1,9 +1,9 @@
-import { atom } from "recoil";
-import { recoilPersist } from "recoil-persist";
+import { atom } from 'recoil';
+import { recoilPersist } from 'recoil-persist';
 
 const { persistAtom } = recoilPersist({
-  key: "recoil-persist",
-  storage: typeof window === "undefined" ? undefined : sessionStorage,
+  key: 'recoil-persist',
+  storage: typeof window === 'undefined' ? undefined : sessionStorage,
 });
 
 export type counterStateType = {
@@ -11,7 +11,7 @@ export type counterStateType = {
 };
 
 export const counterState = atom<counterStateType>({
-  key: "counter",
+  key: 'counter',
   default: {
     count: 0,
   },
