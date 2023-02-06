@@ -10,7 +10,7 @@ const roboto = Roboto_Slab({ subsets: ['latin'] });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <RecoilRoot>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </RecoilRoot>
   );
 }
