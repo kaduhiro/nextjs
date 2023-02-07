@@ -2,7 +2,19 @@ module.exports = {
   plugins: ['import', 'unused-imports', 'sort-export-all', 'tailwindcss'],
   extends: ['next', 'next/core-web-vitals', 'plugin:tailwindcss/recommended', 'prettier'],
   rules: {
-    'no-restricted-imports': ['error'],
+    'no-restricted-imports': [
+      'error',
+      {
+        patterns: [
+          '@/models/*/*',
+          '@/repositories/*/repository',
+          '@/usecases/*/usecase',
+          '@/components/elements/*',
+          '@/components/layouts/*',
+          '@/components/parts/*',
+        ],
+      },
+    ],
     'import/order': [
       'error',
       {
