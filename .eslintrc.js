@@ -6,7 +6,7 @@ module.exports = {
       'error',
       {
         patterns: [
-          '@/models/*/*',
+          '@/entities/*/*',
           '@/repositories/*/repository',
           '@/usecases/*/usecase',
           '@/components/elements/*',
@@ -35,7 +35,7 @@ module.exports = {
             position: 'before',
           },
           {
-            pattern: '@/models/**,@/repositories/**,@/usecases/**,@/components/**',
+            pattern: '@/entities/**,@/repositories/**,@/usecases/**,@/components/**',
             group: 'internal',
             position: 'before',
           },
