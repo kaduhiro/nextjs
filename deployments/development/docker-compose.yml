@@ -13,7 +13,7 @@ services:
   nextjs:
     <<: *COMMON
     build: ../../build
-    image: nextjs:1
+    image: kaduhiro/nextjs
     container_name: nextjs
     hostname: nextjs
     ports:
