@@ -28,6 +28,9 @@ services:
     #   - /sbin/tini
     #   - --
     command:
-      - tail
-      - -f
-      - /dev/null
+      # - tail
+      # - -f
+      # - /dev/null
+      - /bin/sh
+      - -c
+      - 'yarn && yarn dev'
