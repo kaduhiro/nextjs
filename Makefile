@@ -11,11 +11,11 @@ build/%: # build or rebuild a image
 
 run: run/$(SERVICE)
 run/%: # run a one-off command on a container
-	$(DOCKER_COMPOSE) run --rm $* /bin/sh -c "/bin/bash || /bin/sh"
+	$(DOCKER_COMPOSE) run --rm $* sh -c 'bash || sh'
 
 exec: exec/$(SERVICE)
 exec/%: # run a command in a running container
-	$(DOCKER_COMPOSE) exec $* /bin/sh -c "/bin/bash || /bin/sh"
+	$(DOCKER_COMPOSE) exec $* sh -c 'bash || sh'
 
 up: # create and start containers, networks, and volumes
 	$(DOCKER_COMPOSE) up -d
