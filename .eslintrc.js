@@ -54,6 +54,8 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
+    'no-console': 'error',
+    'no-empty': ['error', { allowEmptyCatch: true }],
     'unused-imports/no-unused-imports': 'error',
     'sort-export-all/sort-export-all': 'warn',
   },
