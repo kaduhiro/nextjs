@@ -6,12 +6,18 @@ module.exports = {
       'error',
       {
         patterns: [
-          '@/entities/*/*',
-          '@/repositories/*/repository',
-          '@/usecases/*/usecase',
-          '@/components/elements/*',
-          '@/components/layouts/*',
-          '@/components/parts/*',
+          {
+            group: ['../'],
+          },
+          {
+            group: ['@/entities/*/*', '@/repositories/*/repository', '@/usecases/*/usecase'],
+          },
+          {
+            group: ['@/components/elements/*', '@/components/layouts/*', '@/components/parts/*'],
+          },
+          {
+            group: ['@/states/*'],
+          },
         ],
       },
     ],
