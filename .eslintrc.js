@@ -64,5 +64,6 @@ module.exports = {
     'no-empty': ['error', { allowEmptyCatch: true }],
     'unused-imports/no-unused-imports': 'error',
     'sort-export-all/sort-export-all': 'warn',
+    '@next/next/no-img-element': 'off', // if run yarn export, need to use <img> instead of <Image>
   },
 };
