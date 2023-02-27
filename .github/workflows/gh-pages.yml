@@ -25,6 +25,7 @@ jobs:
         run: yarn build
         env:
           URL_PREFIX: /nextjs # if using a custom domain, not required
+          NEXT_PUBLIC_GA_ID: ${{ vars.NEXT_PUBLIC_GA_ID }}
 
       - name: Export Next.js
         run: yarn export
