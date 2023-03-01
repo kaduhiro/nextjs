@@ -1,3 +1,5 @@
+import '@/assets/css/globals.css';
+
 import { useEffect } from 'react';
 
 import { Roboto_Slab } from '@next/font/google';
@@ -5,8 +7,6 @@ import { useRouter } from 'next/router';
 import { RecoilRoot } from 'recoil';
 
 import { Gtag, GtagHandler } from '@/libraries/gtag';
-
-import '@/assets/css/globals.css';
 
 import type { AppProps } from 'next/app';
 
