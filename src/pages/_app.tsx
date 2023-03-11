@@ -31,6 +31,13 @@ export default function App({ Component, pageProps }: AppProps) {
     <RecoilRoot>
       <Gtag />
       <Component {...pageProps} />
+      <style jsx global>
+        {`
+          :root {
+            --font-roboto: ${roboto.style.fontFamily};
+          }
+        `}
+      </style>
     </RecoilRoot>
   );
 }
