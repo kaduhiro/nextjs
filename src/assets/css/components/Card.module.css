@@ -22,6 +22,7 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+  white-space: normal;
 }
 
 /* Enable hover only on non-touch devices */
