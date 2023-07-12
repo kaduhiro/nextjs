@@ -1,6 +1,6 @@
 .ONESHELL:
 
-SERVICE := nextjs
+include .env
 
 ENVIRONMENT    := development
 DOCKER_COMPOSE := docker-compose -f deployments/$(ENVIRONMENT)/docker-compose.yml
