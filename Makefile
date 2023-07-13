@@ -1,9 +1,9 @@
 .ONESHELL:
 
 include .env
+include .env .env.local
 
-ENVIRONMENT    := development
-DOCKER_COMPOSE := docker-compose -f deployments/$(ENVIRONMENT)/docker-compose.yml
+DOCKER_COMPOSE := docker-compose -f deployments/$(ENVIRONMENT)/docker-compose.yml --env-file .env.local
 
 build: build/$(SERVICE)
 build/%: # build or rebuild a image
