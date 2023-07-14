@@ -1,6 +1,6 @@
-ARG VERSION=19
+ARG NODE_VERSION=19
 
-FROM node:${VERSION}
+FROM node:${NODE_VERSION}
 LABEL maintainer="kaduhiro <github@kaduhiro.com>"
 
 USER node
